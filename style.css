@@ -1,0 +1,298 @@
+/* style.css */
+
+body{
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+h1{
+  font-family: monospace;
+  color: red;
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration: underline;
+}
+h2 {
+  font-family: monospace;
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 25px;
+}
+h3 {
+  font-family: monospace;
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+}
+h4 {
+  font-family: monospace;
+  color: #00008B;
+  font-weight: bolder;
+  font-size: 25px;
+}
+h5 {
+  font-family: monospace;
+  color: #90EE90;
+  font-weight: bolder;
+  font-size: 25px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+/*Custom design*/
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#banner{
+  background-image: url(https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80);
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+#banner h1 {
+  color: white;
+}
+
+#banner p {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+img {
+  width: 150px;
+  height: 125px;
+  border: 1px solid black;
+  background-color: silver;
+  margin-right: 0em;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 30px;
+  padding: 0px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.product:hover {
+  background: rgb(240, 240, 240);
+}
+
+.product:hover .product-upvote {
+  font-size: 25px;
+}
+
+.product-upvote {
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-description {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+
+.product-description a {
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+}
+
+.product-controls a {
+  font-size: 15px;
+  color: #CCCCCC;
+}
+
+.dropdown {
+  float: left;
+  margin: 30px 30px 30px;
+  font-family: monospace;
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+.flag {
+  margin: 30px 30px 30px;
+  height: 100vh;
+  background: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url("https://www.erowa.fr/wp-content/uploads/2019/01/A14F_usine_sofami.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 18px 35px black;
+}
+
+.flag h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.flag p {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.tabs {
+  margin: 30px 30px 30px;
+  border-radius: 40px 40px 40px 40px;
+  color: white;
+  display: flex;
+  box-shadow: 0 18px 35px black;
+}
+
+.tabs h3 {
+  font-size: 17px;
+  color: black;
+}
+
+.tabs p {
+  opacity: 0.5;
+  color: black;
+  font-weight: bolder;
+}
+
+.tabs-item {
+  background: white;
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.tabs-item:first-child {
+  border-radius: 40px 0 0 0;
+}
+.tabs-item:last-child {
+  border-radius: 0 40px 0 0;
+}
+
+.newsletter-container {
+  margin: 30px 30px 30px;
+  padding: 10px 10px 50px;
+  background: white;
+  box-shadow: 0 18px 35px black;
+  border-radius: 4px;
+}
+
+.newsletter-container .button {
+  background:  #6772e5 !important;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:black;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  font-weight: bolder;
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:3px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+
+
